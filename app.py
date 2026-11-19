@@ -30,6 +30,5 @@ def verify_webhook():
 def index():
     return 'Bot is running'
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == '__
 
