@@ -1,5 +1,5 @@
 from flask import flask
 app = Flask()
 @app.route('/')
-def index ()
+def index():
     return 'Bot is running'
