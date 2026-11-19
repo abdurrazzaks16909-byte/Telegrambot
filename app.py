@@ -26,9 +26,9 @@ def verify_webhook():
         return jsonify({'status': 'verified'}), 200
     return 'Forbidden', 403
 
-@app.route('/')
-def index():
-    return 'Bot is running'
+@app.route('/bot', methods=['POST'])
+def bot_webhook():
+    return jsonify({'status': 'ok'}), 200
 
-if __name__ == '__
-
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
