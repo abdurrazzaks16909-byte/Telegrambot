@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 TOKEN = '9148022055:AAGoqODYB5DqwJ0VYLZ1keREhDAdCzlHZo'
-SIGNING_SECRET = '47ded207703a7af93f80'
+SIGNING_SECRET = 4be0497bc3bf18504ac23ea8528ab715ad6154def6bd5da33cffd751882062aa'
 
 @app.route('/', methods=['POST'])
 def verify_webhook():
